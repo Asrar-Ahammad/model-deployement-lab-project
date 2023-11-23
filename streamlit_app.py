@@ -2,7 +2,7 @@ import streamlit as st
 
 # Route to home page
 def index():
-    st.title('Student Performance Prediction')
+    st.title('Student Performance Analyze')
     st.write('Please fill in the following details:')
     gender = st.selectbox('Gender', ['male', 'female'])
     race_ethnicity = st.selectbox('Ethnicity', ['group A', 'group B', 'group C', 'group D', 'group E'])
@@ -12,7 +12,7 @@ def index():
     reading_score = st.number_input('Reading Score', min_value=0, max_value=100)
     writing_score = st.number_input('Writing Score', min_value=0, max_value=100)
     
-    if st.button('Predict'):
+    if st.button('Analyze'):
         
         average = (reading_score+writing_score)/2
         y = (0.94066*average) + 12.17384
