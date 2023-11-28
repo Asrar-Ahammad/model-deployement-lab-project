@@ -9,7 +9,7 @@ def index():
     parental_education = st.selectbox('Parental Education', ['some high school', 'high school', 'some college', "associate's degree", "bachelor's degree", "master's degree"])
     lunch = st.selectbox('Lunch Type', ['standard', 'free/reduced'])
     test_prep = st.selectbox('Test Preparation Course', ['none', 'completed'])
-    reading_score = st.number_input('Reading Score', min_value=0, max_value=100)
+    reading_score = st.number_input('english ', min_value=0, max_value=100)
     writing_score = st.number_input('Writing Score', min_value=0, max_value=100)
     
     if st.button('Analyze'):
